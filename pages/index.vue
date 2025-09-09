@@ -4,6 +4,12 @@
         <p class="mb-2">
             <v-btn :to="$localePath('/dog')">{{ $t('dog') }}</v-btn>
         </p>
-        <p><v-btn :to="$localePath('/cat')">{{ $t('cat') }}</v-btn></p>
+        <p class="mb-2">
+            <v-btn :to="$localePath('/cat')">{{ $t('cat') }}</v-btn>
+        </p>
+        <p>
+            Sin usar <code>$localePath</code>
+            <v-btn to="/hamster">{{ $t('hamster') }}</v-btn>
+        </p>
     </div>
 </template>
