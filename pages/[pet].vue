@@ -16,7 +16,6 @@ const { t, locale } = useI18n();
 const { data, refresh } = await useFetch(`https://${locale.value}.wikipedia.org/api/rest_v1/page/summary/${t(route.params.pet)}`);
 
 watch(locale, () => {
-    console.log('change', locale.value);
     refresh();
 })
 </script>

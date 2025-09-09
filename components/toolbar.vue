@@ -30,7 +30,13 @@ const availableLocales = computed(() => [
   { title: t('english'), value: 'en' }
 ])
 
+// si cambia el select → cambia el i18n.locale
 watch(currentLocale, (value) => {
-    setLocale(value);
+  if (locale.value !== value) setLocale(value)
+})
+
+// si cambia el i18n.locale (por navegación, switchLocalePath, etc.) → actualiza el select
+watch(locale, (value) => {
+  if (currentLocale.value !== value) currentLocale.value = value
 })
 </script>

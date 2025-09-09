@@ -9,6 +9,8 @@
         </p>
         <p>
             Sin usar <code>$localePath</code>
+        </p>
+        <p>
             <v-btn to="/hamster">{{ $t('hamster') }}</v-btn>
         </p>
     </div>
