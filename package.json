@@ -1,0 +1,17 @@
+{
+  "name": "nuxt",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/i18n": "^10.0.6",
+    "nuxt": "^3.10.0",
+    "vuetify-nuxt-module": "^0.18.7"
+  }
+}

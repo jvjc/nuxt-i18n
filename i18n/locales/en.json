@@ -1,0 +1,12 @@
+{
+    "title": "i18n example",
+    "subtitle": "Pets information",
+    "dog": "Dog",
+    "cat": "Cat",
+    "language": "Language",
+    "spanish": "Spanish",
+    "english": "English",
+
+    "$vuetify.open": "Open",
+    "$vuetify.close": "Close"
+}
