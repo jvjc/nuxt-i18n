@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import Toolbar from './components/toolbar.vue';
-
-</script>
-
 <template>
   <div>
     <Toolbar />
@@ -11,3 +6,11 @@ import Toolbar from './components/toolbar.vue';
     </v-container>
   </div>
 </template>
+
+<script setup lang="ts">
+import Toolbar from './components/toolbar.vue';
+
+useHead({
+  title: $t('title'),
+})
+</script>
